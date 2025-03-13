@@ -28,7 +28,7 @@ function ProductPage() {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const { data } = await axios.get(`http://127.0.0.1:8001/api/v1/products/${productId}/`);
+        const { data } = await axios.get(`http://127.0.0.1:8000/api/v1/products/${productId}/`);
         setProduct(data);
         setLoading(false);
       } catch (err) {
